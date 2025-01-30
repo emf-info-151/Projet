@@ -43,7 +43,7 @@
     */
     public function getNom()
     {
-      return $this->nom;
+      return $this->pk_pays;
     }
     
     /**

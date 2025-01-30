@@ -27,7 +27,7 @@
 			$connection = new Connection();
 			$query = $connection->executeQuery("select * from t_skieur where FK_Pays = " .$fkPays);
 			foreach($query as $data){
-				$coureur = new Skieur($data['PK_Skieur'], $data['Nom'], $data['Position']);
+				$coureur = new Skieur($data['PK_Skieur'], $data['Nom'], $data['PK_Skieur']);
 				$liste[$count++] = $coureur;
 			}	
 			return $liste;	

@@ -42,7 +42,6 @@ class Skieur {
   public function __construct($pkSkieur, $nom, $position) {
     $this->pk_skieur = $pkSkieur;
     $this->nom = $nom;
-    $this->position = $position;
   }
 
   /**
@@ -80,7 +79,7 @@ class Skieur {
   {
     $result = '<skieur>';
     $result = $result . '<nom>'.$this->getNom().'</nom>';
-    $result = $result . '<position>'.$this->getPosition().'</position>';
+    $result = $result . '<position>'.$this->getNom().'</position>';
     $result = $result . '</skieur>';
     return $result;
   }
